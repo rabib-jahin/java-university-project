@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="423.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="window.ManufacturerController">
+   <children>
+      <Label layoutX="150.0" layoutY="20.0" prefHeight="60.0" prefWidth="262.0" text="Manufacturer  Window" textFill="#e81a1a">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="bt" layoutX="383.0" layoutY="329.0" mnemonicParsing="false" onAction="#getData" text="getData" />
+      <Label fx:id="allCars" layoutX="78.0" layoutY="117.0" onMouseClicked="#getCars" prefHeight="53.0" prefWidth="235.0" text="1 . View All Cars" textFill="#1421da">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="addCarsLabel" layoutX="78.0" layoutY="195.0" onMouseClicked="#addCarAction" prefHeight="25.0" prefWidth="132.0" text="2. Add Cars" textFill="#060af2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="553.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.SignupController">
+   <children>
+      <Label layoutX="183.0" layoutY="14.0" prefHeight="81.0" prefWidth="220.0" text="Signup  Form" textFill="#2f15da">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="111.0" prefHeight="50.0" prefWidth="142.0" text="Enter UserName">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="175.0" prefHeight="81.0" prefWidth="166.0" text="Enter Password">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="266.0" prefHeight="50.0" prefWidth="159.0" text="Confirm Password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="name" layoutX="271.0" layoutY="124.0" />
+      <TextField fx:id="pass" layoutX="271.0" layoutY="203.0" />
+      <TextField fx:id="confirmPass" layoutX="271.0" layoutY="279.0" />
+      <Button layoutX="87.0" layoutY="341.0" mnemonicParsing="false" onAction="#signInAction" text="SignUp" />
+      <Button layoutX="35.0" layoutY="30.0" mnemonicParsing="false" onAction="#homeAction" text="Home" />
+   </children>
+</AnchorPane>

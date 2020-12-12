@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="514.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.HomeController">
+   <children>
+      <Label layoutX="107.0" layoutY="27.0" prefHeight="35.0" prefWidth="314.0" text="Welcome To Carshowroom" textFill="#f81717">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="manufacturer" layoutX="107.0" layoutY="121.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="179.0" text="Login as a manufacturer">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="viewer" layoutX="107.0" layoutY="183.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="131.0" text="Login as a viewer" toggleGroup="$group" />
+      <Button fx:id="goButton" layoutX="107.0" layoutY="292.0" mnemonicParsing="false" onAction="#buttonPressed" text="Go" />
+      <RadioButton fx:id="admin" layoutX="110.0" layoutY="244.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="144.0" text="Login as an Admin" />
+      <Button layoutX="360.0" layoutY="344.0" mnemonicParsing="false" onAction="#signUpAction" text="Signup" />
+   </children>
+</AnchorPane>
